@@ -381,7 +381,7 @@ async def start(client, message):
             btn = [[
                 InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
             ]]
-            k = await msg.reply("<b><u>🔴 IMPORTANT 🔴</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u><i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to Someone and Start Download there</i></b>\n\n<b><u>🔴 IMPORTANT 🔴</u></b>",quote=True)
+            k = await msg.reply("<b>This Files/Videos will be deleted in 10 mins</b>",quote=True)
             await asyncio.sleep(600)
             await msg.delete()
             await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
@@ -427,7 +427,7 @@ async def start(client, message):
     btn = [[
         InlineKeyboardButton("Get File Again", callback_data=f'delfile#{file_id}')
     ]]
-    k = await msg.reply("<b><u>🔴 IMPORTANT 🔴</u></b>\n\nThis Movie File/Video will be deleted in <b><u>10 mins</u><i></b>(Due to Copyright Issues)</i>.\n\n<b><i>Please forward this File/Video to Someone and Start Download there</i></b>\n\n<b><u>🔴 IMPORTANT 🔴</u></b>",quote=True)
+    k = await msg.reply("<b>This Files/Videos will be deleted in 10 mins</b>",quote=True)
     await asyncio.sleep(600)
     await msg.delete()
     await k.edit_text("<b>Your File/Video is successfully deleted!!!\n\nClick below button to get your deleted file 👇</b>",reply_markup=InlineKeyboardMarkup(btn))
